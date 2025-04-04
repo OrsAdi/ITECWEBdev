@@ -1,13 +1,13 @@
+{%load static%}
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Music and Clothes</title>
-  <link rel="stylesheet" href="static/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Futura&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-</head>
-<body>
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Music and Clothes</title>
+        <link rel="stylesheet" href="{%static '/css/style.css'%}">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
   <header class="header">
     <div class="container">
@@ -35,6 +35,20 @@
         </nav>
       </div>
 
+        <div class="slideshow">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="{% static 'poze/poza_fundal.jpg'%}" alt="Background"></div>
+    
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                {% comment %} <div class="swiper-scrollbar"></div>  {% endcomment %}
+            </div>
       <div class="favorite-category">
         <div class="category-img">
           <img src="woman image.webp" alt="Fashion Woman">
