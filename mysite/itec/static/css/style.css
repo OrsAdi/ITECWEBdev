@@ -48,3 +48,25 @@ nav ul li {
   width: 80%;
   height: fit-content;
 }
+
+.icon-cart {
+  position: relative;
+  cursor: pointer;
+}
+
+.icon-cart span {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background: #cf820f;
+  border-radius: 50%;
+  justify-content: space-around;
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  cursor: pointer;
+}
+
+a {
+  font-style: normal;
+}
