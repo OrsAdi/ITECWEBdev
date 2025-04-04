@@ -1,96 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-* {
+*{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: none;
 }
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background: #f9f9f9;
-  color: #222;
-  padding: 20px;
-}
-
-.container {
-  max-width: 1200px;
-  margin: auto;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background: #fff;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-  }  
-
-.title h1 {
-  font-family: 'Futura', 'Trebuchet MS', sans-serif;
-  font-size: 32px;
-  color: #111;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
+.navbar{
+  display: fi ;
   align-items: center;
-  gap: 25px;
+  padding: 10px;  
 }
-
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-  font-size: 16px;
-  transition: 0.2s ease;
+nav{
+  flex: 1;
+  text-align:right ; 
+  
 }
-
-nav ul li a:hover {
-  font-weight: 600;
+nav img{
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 30px;
 }
-
-.icon-cart {
+nav ul{
+  display: inline-block;
+  list-style:armenian;
+  text-align: right;
+  
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+.icon-cart{
   position: relative;
   cursor: pointer;
 }
-
-.icon-cart span {
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  background: #cf820f;
-  color: white;
-  border-radius: 50%;
+.icon-cart span{
+  display: flex;
   width: 20px;
   height: 20px;
-  font-size: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: #cf820f;
+  border-radius: 50%;
+  justify-content: space-around;
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  cursor: pointer;
 }
-
-.favorite-category {
-  display: flex;
-  gap: 20px;
-  margin-top: 40px;
-  flex-wrap: wrap;
-}
-
-.category-img {
-  flex: 1;
-  min-width: 300px;
-}
-
-.category-img img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  object-fit: cover;
-  overflow: none;
+a{
+  font-style: normal;
 }
