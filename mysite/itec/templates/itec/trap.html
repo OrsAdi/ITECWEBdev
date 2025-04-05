@@ -1,15 +1,72 @@
+{%load static%}
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href ="static/css/trap.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping Website</title>
+  <link rel="stylesheet" href="{%static 'css/manele.css'%}" />
+  <link rel="stylesheet" href="{%static 'css/nav.css'%}" />
 </head>
-
 <body>
-    <h1>Ziua buna</h1>
-</body>
+  <header>
+    <div class="navbar">
+        <div class="title">
+          <h1>M&C</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="{%url 'home'%}">Home</a></li>
+            <li><a href="{%url 'manele'%}">Catalog</a></li>
+            <li>
+              <div class="user-pic">
+                <!-- User Icon -->
+                👤
+              </div>
+            </li>
+            <li>
+              <div class="icon-cart">
+                🛒
+                <span>0</span>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+  </header>
 
+  <main>
+    <section class="product-grid">
+      <!-- Repeat this block for each product -->
+      <div class="product-card">
+        <img src="{%static 'poze/semafor.jpg'%}" alt="Product Image">
+        <h2>Product Name</h2>
+        <p>$19.99</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="{%static 'poze/semafor.jpg'%}" alt="Product Image">
+        <h2>Product Name</h2>
+        <p>$24.99</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="{%static 'poze/semafor.jpg'%}" alt="Product Image">
+        <h2>Product Name</h2>
+        <p>$29.99</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="{%static 'poze/semafor.jpg'%}" alt="Product Image">
+        <h2>Product Name</h2>
+        <p>$34.99</p>
+        <button>Add to Cart</button>
+      </div>
+    </section>
+  </main>
+</body>
 </html>
