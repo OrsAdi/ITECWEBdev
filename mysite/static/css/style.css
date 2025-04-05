@@ -12,7 +12,14 @@ body {
   color: #222;
   padding: 20px;
 }
-
+.swipe{
+  width: 100%;
+}
+.swipe-slide img{
+  width: 100%;
+  border-radius: 1%;
+  height: 100vh;
+}
 
 .navbar {
     display: flex;
