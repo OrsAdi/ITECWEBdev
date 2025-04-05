@@ -14,7 +14,6 @@ body {
 }
 
 .container {
-  max-width: 1200px;
   margin: auto;
 }
 
@@ -23,11 +22,10 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background: #fff;
+  background: transparent;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
 }
 
@@ -58,6 +56,7 @@ nav ul li a {
 
 .swiper-slide img {
   width: 100%;
+  border-radius: 15%;
 }
 
 nav ul li a:hover {
