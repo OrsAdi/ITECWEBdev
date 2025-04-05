@@ -13,10 +13,6 @@ body {
   padding: 20px;
 }
 
-.container {
-  max-width: 1200px;
-  margin: auto;
-}
 
 .navbar {
     display: flex;
@@ -26,7 +22,6 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
   }  
 
