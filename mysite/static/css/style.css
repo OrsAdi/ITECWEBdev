@@ -37,6 +37,7 @@ body {
   /* Ensures the image covers the slide area without distortion */
 }
 
+/* 
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -99,7 +100,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 .favorite-category {
   display: flex;
@@ -116,26 +117,31 @@ a:hover {
   border-radius: 12px;
   object-fit: cover;
 }
-.category-img1,.category-img2 {
+
+.category-img1,
+.category-img2 {
   position: relative;
   flex: 1;
   min-width: 300px;
   overflow: hidden;
   border-radius: 12px;
 }
-.category-section{
+
+.category-section {
   margin-top: 60px;
 }
-.category-text{
+
+.category-text {
   position: relative;
-  top:-18%;
+  top: -18%;
   left: 13%;
   color: white;
   font-size: 24px;
   font-weight: 600;
-  text-shadow: 1px 1px 8px rgba(0,0,0,0.7);
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7);
 }
-#category-btn{
+
+#category-btn {
   position: absolute;
   bottom: 75.6%;
   left: 14.2%;
@@ -151,13 +157,16 @@ a:hover {
   cursor: pointer;
   transition: 0.4s;
 }
-#category-btn:hover{
+
+#category-btn:hover {
   box-shadow: 7px 5px 56px -14px #C3D900;
 }
+
 #category-btn:active {
   transform: scale(0.97);
   box-shadow: 7px 5px 56px -10px #C3D900;
- }
+}
+
 #bottone1 {
   position: absolute;
   bottom: 75.6%;
@@ -173,16 +182,17 @@ a:hover {
   text-align: center;
   cursor: pointer;
   transition: 0.4s;
- }
- 
- #bottone1:hover {
+}
+
+#bottone1:hover {
   box-shadow: 7px 5px 56px -14px #C3D900;
- }
- 
- #bottone1:active {
+}
+
+#bottone1:active {
   transform: scale(0.97);
   box-shadow: 7px 5px 56px -10px #C3D900;
- }
+}
+
 .category-title {
   font-size: 28px;
   margin-bottom: 10px;

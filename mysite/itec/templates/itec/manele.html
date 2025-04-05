@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shopping Website</title>
   <link rel="stylesheet" href="{%static 'css/manele.css'%}" />
+  <link rel="stylesheet" href="{%static 'css/nav.css'%}" />
 </head>
 <body>
   <header>
@@ -16,7 +17,7 @@
         </div>
         <nav>
           <ul>
-            <li><a href="">Home</a></li>
+            <li><a href="{%url 'home'%}">Home</a></li>
             <li><a href="{%url 'manele'%}">Catalog</a></li>
             <li>
               <div class="user-pic">
