@@ -18,7 +18,16 @@
         <nav>
           <ul>
             <li><a href="{%url 'home'%}">Home</a></li>
-            <li><a href="{%url 'manele'%}">Catalog</a></li>
+            <li class="dropdown"><a>Catalog ▾</a>
+              <ul class="dropdown-menu">
+                <li><a href="{%url 'manele'%}">Manele</a></li>
+                <li><a href="{%url 'rap'%}">Rap</a></li>
+                <li><a href="{%url 'trap'%}">Trap</a></li>
+                <li><a href="{%url 'rock'%}">Rock</a></li>
+                <li><a href="{%url 'pop'%}">Pop</a></li>
+                <li><a href="{%url 'jaz'%}">Jazz</a></li>
+              </ul>
+            </li>    
             <li>
               <div class="user-pic">
                 <!-- User Icon -->
