@@ -13,18 +13,28 @@ body {
   padding: 20px;
 }
 
-.swipe {
+.swiper {
   width: 100%;
-  height: auto;
+  height: 100vh;
+  /* Make the slideshow take up the full viewport height */
+  overflow: hidden;
 }
 
-.swipe-slide img {
+/* Make the Swiper slides fill the container */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  border-radius: 1%;
-  height: auto;
+  height: 100%;
+}
+
+/* Make the images responsive and fit the slide */
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 8px;
-  /* height: 100vh; */
+  /* Ensures the image covers the slide area without distortion */
 }
 
 .navbar {
