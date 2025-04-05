@@ -12,25 +12,31 @@ body {
   color: #222;
   padding: 20px;
 }
-.swipe{
+
+.swipe {
   width: 100%;
+  height: auto;
 }
-.swipe-slide img{
+
+.swipe-slide img {
   width: 100%;
   border-radius: 1%;
-  height: 100vh;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  /* height: 100vh; */
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    border-radius: 20px;
-  }  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-radius: 20px;
+}
 
 .title h1 {
   font-family: 'Futura', 'Trebuchet MS', sans-serif;
@@ -55,11 +61,14 @@ nav ul li a {
 nav ul li a:hover {
   font-weight: 600;
 }
-a{
+
+a {
   text-shadow: #ffffff;
 }
-a:hover{
-  text-shadow: 0 0 10px #ffffff;;
+
+a:hover {
+  text-shadow: 0 0 10px #ffffff;
+  ;
 }
 
 .icon-cart {
@@ -93,10 +102,12 @@ a:hover{
   flex: 1;
   min-width: 300px;
 }
+
 .category-img2 {
   flex: 1;
   min-width: 300px;
 }
+
 .category-img1 img {
   width: 100%;
   height: 30%;
@@ -104,20 +115,7 @@ a:hover{
   object-fit: cover;
   overflow: none;
 }
-.category-img2 img {
-  width: 100%;
-  height: 30%;
-  border-radius: 12px;
-  object-fit: cover;
-  overflow: none;
-}
-.category-img1 {
-  position: relative;
-  flex: 1;
-  min-width: 300px;
-  overflow: hidden;
-  border-radius: 12px;
-}
+
 .category-img2 img {
   width: 100%;
   height: 30%;
@@ -126,16 +124,33 @@ a:hover{
   overflow: none;
 }
 
-.category-text{
+.category-img1 {
   position: relative;
-  top:-18%;
+  flex: 1;
+  min-width: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.category-img2 img {
+  width: 100%;
+  height: 30%;
+  border-radius: 12px;
+  object-fit: cover;
+  overflow: none;
+}
+
+.category-text {
+  position: relative;
+  top: -18%;
   left: 13%;
   color: white;
   font-size: 24px;
   font-weight: 600;
-  text-shadow: 1px 1px 8px rgba(0,0,0,0.7);
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7);
 }
-#category-btn{
+
+#category-btn {
   position: absolute;
   bottom: 75.6%;
   left: 14.2%;
@@ -151,13 +166,16 @@ a:hover{
   cursor: pointer;
   transition: 0.4s;
 }
-#category-btn:hover{
+
+#category-btn:hover {
   box-shadow: 7px 5px 56px -14px #C3D900;
 }
+
 #category-btn:active {
   transform: scale(0.97);
   box-shadow: 7px 5px 56px -10px #C3D900;
- }
+}
+
 #bottone1 {
   position: absolute;
   top: 50%;
@@ -173,13 +191,13 @@ a:hover{
   text-align: center;
   cursor: pointer;
   transition: 0.4s;
- }
- 
- #bottone1:hover {
+}
+
+#bottone1:hover {
   box-shadow: 7px 5px 56px -14px #C3D900;
- }
- 
- #bottone1:active {
+}
+
+#bottone1:active {
   transform: scale(0.97);
   box-shadow: 7px 5px 56px -10px #C3D900;
- }
+}
