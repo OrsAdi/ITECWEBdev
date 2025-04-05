@@ -20,7 +20,13 @@
         <nav>
           <ul>
             <li><a href="">Home</a></li>
-            <li><a href="{%url 'manele'%}">Catalog</a></li>
+           <li class="dropdown"><a>Catalog ▾</a>
+              <ul class="dropdown-menu">
+                <li><a href="{%url 'manele'%}">Manele</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="music.html">Music</a></li>
+              </ul>
+            </li>
             <li>
               <div class="user-pic">
                 <!-- User Icon -->
@@ -68,19 +74,19 @@
       <!-- Product cards on the left -->
       <div class="product-cards">
         <div class="product-card">
-          <img src="woman image.webp" alt="Product 1">
+          <img src="{%static 'poze/semafor.jpg'%}" alt="Product 1">
           <h3>Urban Hoodie</h3>
           <p>$49.99</p>
           <button class="add-to-cart">Add to Cart</button>
         </div>
         <div class="product-card">
-          <img src="woman image.webp" alt="Product 2">
+          <img src="{%static 'poze/semafor.jpg'%}">
           <h3>Graphic Tee</h3>
           <p>$29.99</p>
           <button class="add-to-cart">Add to Cart</button>
         </div>
         <div class="product-card">
-          <img src="woman image.webp" alt="Product 3">
+          <img src="{%static 'poze/semafor.jpg'%}" alt="Product 3">
           <h3>Wireless Headphones</h3>
           <p>$99.99</p>
           <button class="add-to-cart">Add to Cart</button>
@@ -88,11 +94,24 @@
       </div>
   
       <div class="category-side-image">
-        <img src="woman image.webp" alt="Category Banner">
+        <img src="{%static 'poze/semafor.jpg'%}" alt="Category Banner">
       </div>
   
     </div>
   </section>
+  <footer class="footer">
+    <div class="about">
+      <div class="sposors"></div>
+      <div class="socials">
+        <p1>Instagram</p1>
+        <p1>Facebook</p1>
+        <p1>TikToc</p1>
+      </div>
+    </div>
+    <div class="container">
+      <p>&copy; 2025 Music and Clothes. All rights reserved. Designed by Adi^2.</p>
+    </div>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
      const swiper = new Swiper('.swiper', {
