@@ -8,3 +8,5 @@ def home(request):
 def manele(request):
     context={}
     return render(request, "itec/manele.html", context)
+
+# views.py
