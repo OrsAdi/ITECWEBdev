@@ -3,26 +3,25 @@
 //   .then(response => response.json())
 //   .then(products => renderProducts(products))
 //   .catch(error => console.error('Error loading products:', error));
-
 // Example inline data (can replace with fetch):
 const products = [
     {
-        name: "Wireless Headphones",
+        name: "Jacheta",
         price: 59.99,
-        image: "https://via.placeholder.com/200"
+        image: "bocanci_rock.jpg"
     },
     {
-        name: "Smart Watch",
+        name: "Pantaloni",
         price: 129.99,
         image: "https://via.placeholder.com/200"
     },
     {
-        name: "Bluetooth Speaker",
+        name: "Adidasi",
         price: 89.99,
         image: "https://via.placeholder.com/200"
     },
     {
-        name: "VR Headset",
+        name: "Tricou",
         price: 249.99,
         image: "https://via.placeholder.com/200"
     }
@@ -38,7 +37,7 @@ function renderProducts(products) {
         card.innerHTML = `
       <img src="${product.image}" alt="${product.name}">
       <h2>${product.name}</h2>
-      <p>$${product.price.toFixed(2)}</p>
+      <p>${product.price.toFixed(2)} Lei</p>
       <button>Add to Cart</button>
     `;
 

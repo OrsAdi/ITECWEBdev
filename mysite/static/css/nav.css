@@ -54,7 +54,7 @@
 .title h1 {
     font-family: 'Futura', 'Trebuchet MS', sans-serif;
     font-size: 32px;
-    color: #111;
+    color: #000;
 }
 
 nav ul {
@@ -66,7 +66,7 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: coral;
     font-size: 16px;
     transition: 0.2s ease;
 }

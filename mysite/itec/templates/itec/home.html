@@ -48,9 +48,9 @@
         <div class="slideshow">
             <div class="swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="{% static 'poze/poza.jpg'%}" alt="Background"></div>
-                    <div class="swiper-slide"><img src="{% static 'poze/poza.jpg'%}" alt="Background"></div>
-                    <div class="swiper-slide"><img src="{% static 'poze/poza.jpg'%}" alt="Background"></div>
+                    <div class="swiper-slide"><img src="{% static 'poze/travis.jpg'%}" alt="Background"></div>
+                    <div class="swiper-slide"><img src="{% static 'poze/roker.webp'%}" alt="Background"></div>
+                    <div class="swiper-slide"><img src="{% static 'poze/salam.jpeg'%}" alt="Background"></div>
                 </div>
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev"></div>
@@ -59,12 +59,12 @@
           </div>
     <div class="favorite-category">
       <div class="category-img1">
-        <img src="{%static 'poze/semafor.jpg'%}"  alt="Fashion Woman">
+        <img src="{%static 'poze/rock.webp'%}"  alt="Fashion Woman">
         <div class="category-text">Style Drop</div>
         <button id="category-btn"><strong>Discover Category</strong></button>
       </div>
       <div class="category-img2">
-        <img src="{%static 'poze/semafor.jpg'%}" alt="Fashion Woman">
+        <img src="{%static 'poze/mafia.png'%}" alt="Fashion Woman">
         <div class="category-text">Style Drop</div>
         <button id="bottone1"><strong>Discover Category</strong></button>        
       </div>
@@ -77,44 +77,49 @@
       <!-- Product cards on the left -->
       <div class="product-cards">
         <div class="product-card">
-          <img src="{%static 'poze/semafor.jpg'%}" alt="Product 1">
-          <h3>Urban Hoodie</h3>
-          <p>$49.99</p>
+          <img src="{%static 'poze/pantaloni_rock.jpg'%}" alt="Product 1">
+          <h3>Pantaloni</h3>
+          <p>49.99 Lei</p>
           <button class="add-to-cart">Add to Cart</button>
         </div>
         <div class="product-card">
-          <img src="{%static 'poze/semafor.jpg'%}">
-          <h3>Graphic Tee</h3>
-          <p>$29.99</p>
+          <img src="{%static 'poze/bocanci_rock.jpg'%}">
+          <h3>Bocanci</h3>
+          <p>29.99 Lei</p>
           <button class="add-to-cart">Add to Cart</button>
         </div>
         <div class="product-card">
-          <img src="{%static 'poze/semafor.jpg'%}" alt="Product 3">
-          <h3>Wireless Headphones</h3>
-          <p>$99.99</p>
+          <img src="{%static 'poze/jacheta_rock.jpg'%}" alt="Product 3">
+          <h3>Geaca</h3>
+          <p>99.99 Lei</p>
           <button class="add-to-cart">Add to Cart</button>
         </div>
       </div>
   
       <div class="category-side-image">
-        <img src="{%static 'poze/semafor.jpg'%}" alt="Category Banner">
+        <img src="{%static 'poze/elvis.webp'%}" alt="Category Banner">
       </div>
   
     </div>
   </section>
   <footer class="footer">
     <div class="about">
-      <div class="sposors"></div>
+      <div class="sposors">
+        <a href ="//www.instagram.com/orasan_adrian/">Adi</a>
+        <a>Adi^</a>
+        <a href="https://www.instagram.com/nelutu.ban12/" target="_blank" rel="noopener noreferrer">Nelutu</a>
+      </div>
       <div class="socials">
-        <p1>Instagram</p1>
-        <p1>Facebook</p1>
-        <p1>TikToc</p1>
+        <a href="https://www.instagram.com/nelutu.ban12/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a>Facebook</a>
+        <a>TikToc</a>
       </div>
     </div>
     <div class="container">
       <p>&copy; 2025 Music and Clothes. All rights reserved. Designed by Adi^2.</p>
     </div>
   </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
      const swiper = new Swiper('.swiper', {
@@ -123,7 +128,7 @@
       loop: true,
 
       autoplay: {
-        delay: 5000, // 5000ms = 5 seconds
+        delay: 5000, 
         disableOnInteraction: false, // Keeps autoplay active even after user interaction
       },
       // If we need pagination
@@ -133,7 +138,7 @@
 
       speed: 1000,
 
-      // Navigation arrows
+      
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
