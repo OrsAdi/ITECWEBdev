@@ -14,12 +14,12 @@ body {
 }
 
 .slideshow {
-  max-height: 500px;
+  max-height: 30vh;
 }
 
 .swiper {
   width: 100%;
-  height: 100vh;
+  height: 30vh;
   /* Make the slideshow take up the full viewport height */
   overflow: hidden;
 }
